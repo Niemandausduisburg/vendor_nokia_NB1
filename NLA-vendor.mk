@@ -1569,3 +1569,50 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NLA/proprietary/vendor/lib64/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoutils.so \
     vendor/nokia/NLA/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
     vendor/nokia/NLA/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so
+
+#Recovery    
+PRODUCT_COPY_FILES += \
+    vendor/nokia/NLA/proprietary/recovery/root/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc \
+    vendor/nokia/NLA/proprietary/recovery/root/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc \
+    vendor/nokia/NLA/proprietary/recovery/root/system/bin/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service \
+    vendor/nokia/NLA/proprietary/recovery/root/system/bin/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.keymaster@3.0-service \
+    vendor/nokia/NLA/proprietary/recovery/root/system/bin/crash_dump64:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/crash_dump64 \
+    vendor/nokia/NLA/proprietary/recovery/root/system/bin/qseecomd:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/qseecomd \
+    vendor/nokia/NLA/proprietary/recovery/root/system/etc/event-log-tags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/event-log-tags \
+    vendor/nokia/NLA/proprietary/recovery/root/system/etc/task_profiles.json:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/task_profiles.json \
+    vendor/nokia/NLA/proprietary/recovery/root/system/etc/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags \
+    vendor/nokia/NLA/proprietary/recovery/root/system/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/system/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/system/etc/vintf/manifest/android.system.suspend@1.0-service.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest/android.system.suspend@1.0-service.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/compatibility_matrix.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/manifest.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/etc/vintf/manifest/android.hardware.boot@1.0.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/manifest/android.hardware.boot@1.0.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.xml \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/hw/gatekeeper.msm8998.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/hw/gatekeeper.msm8998.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/hw/keystore.msm8998.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/hw/keystore.msm8998.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libGPreqcancel.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libGPreqcancel_svc.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libQSEEComAPI.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libSecureUILib.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libStDrvInt.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libdiag.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libdrmfs.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libdrmtime.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libkeymaster3device.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libkeymaster3device.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libkeymasterdeviceutils.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libkeymasterprovision.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libkeymasterutils.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libqdutils.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libqisl.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libqservice.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libqservice.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/librpmb.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libsecureui.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libsecureui_svcsock.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libspl.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/libssd.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/vendor.display.config@1.0.so \
+    vendor/nokia/NLA/proprietary/recovery/root/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
